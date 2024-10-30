@@ -4,7 +4,6 @@ int main()
 {
     int n, i, max, min, negativi, somma;
     double media;
-
     cout << "inserisci un numero" << endl;
     cin >> n;
     max = n;
@@ -12,7 +11,8 @@ int main()
     i = 0;
     somma = 0;
     negativi = 0;
-    while (n != 0) {
+    while (n != 0) 
+    {
         if (n > 0) {
             i = i + 1;
             somma = somma + n;
@@ -31,5 +31,4 @@ int main()
     }
     media = (double) somma / i;
     cout << "il valore massimo è " << max << ", il valore minimo è " << min << ", la media dei valori positivi è " << media << ", i valori negativi inseriti sono " << negativi << endl;
-    return 0;
 }
